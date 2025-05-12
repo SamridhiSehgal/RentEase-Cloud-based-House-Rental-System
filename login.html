@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account login</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="/cloudhome.jpeg" alt="Cloud Home" />
+            <h4>Welcome to RentEase Login Page</h4>
+        </div>
+    </header>
+    <hr/>
+
+    <div class="main-container">
+        <div class="left-content">
+            <p><b>Important Instructions</b></p>
+            <ul>
+                <li>Please click on login if you are visiting the site first time</li>
+                <li>Suggestion for password</li>
+                <ul>
+                    <li>Password must be 8 digits long</li>
+                    <li>Use different symbols in password such as @, #, $, !...</li>
+                    <li>Use both upper case and lower case characters</li>
+                </ul>
+                <li>Please click on signup if you are already logged in and want to continue with your data stored</li>
+            </ul>
+        </div>
+
+        <div class="right-content">
+            <h3>Login</h3>
+            <form action="/login" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <p><b>Login as:</b></p>
+                <div class="role-selection">
+                <label><input type="radio" name="role" value="tenant" required> Tenant</label>
+                <label><input type="radio" name="role" value="landlord"> Landlord</label>
+                </div>
+
+
+                <input type="submit" value="Login">
+                <a href="signup.html" class="signup-button">Signup</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
